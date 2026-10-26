@@ -64,8 +64,9 @@ Prikazuje hijerarhijsku navigaciju pomoću `NavigationSplitView`, idealnu za ure
 
 
 ### iPad/MacOS prikaz
-<img src="https://github.com/ksvetec24/Navigabilnost-RAMPU/blob/main/resources/NavigationSplitViewMacOS.png" width=50%/>
-
+<p align="center">
+    <img src="https://github.com/ksvetec24/Navigabilnost-RAMPU/blob/main/resources/NavigationSplitViewMacOS.png" width=80%/>
+</p>
 ## StackViewDemo.swift
 Demonstrira korištenje `NavigationStack` za klasičnu dubinsku navigaciju. Sadrži primjere izravnog definiranja odredišnih pogleda unutar poveznice (`SimpleViewDestinationExample`) te napredniji pristup prosljeđivanja vrijednosti (`SimpleValueDestinationExample`) pomoću modifikatora `.navigationDestination(for:)`, što omogućuje čišće odvajanje navigacijske logike od samog prikaza.
 
@@ -84,11 +85,13 @@ Demonstrira korištenje `NavigationStack` za klasičnu dubinsku navigaciju. Sadr
 
 ## TabViewDemo.swift
 Objašnjava implementaciju kartične navigacije putem komponente `TabView`. Datoteka uključuje standardni donji navigacijski izbornik te prikaz stila stranice (`PageStyleTabView`) koji omogućuje vodoravno klizanje između ekrana. `SimpleTabViewDemo` dodatno prikazuje strukturiranje kartica koristeći `Tab` i `TabSection`.
+
 <img src="https://github.com/ksvetec24/Navigabilnost-RAMPU/blob/main/resources/TabViewDemo.png" width=30%/>
 
 
 ## ContentView.swift
 Ovo je središnji izbornik aplikacije koji koristi `NavigationStack` za usmjeravanje korisnika na različite demo ekrane. Prikazuje dinamičko generiranje popisa navigacijskih opcija te koristi `.navigationDestination`  sa  `switch` grananjem za prikaz odabranog ekrana. Također sadrži gumb za otvaranje `SplitViewDemo` prikaza preko cijelog ekrana pomoću `.fullScreenCover` modifikatora.
+
 <img src="https://github.com/ksvetec24/Navigabilnost-RAMPU/blob/main/resources/Screenshot%20iPhone%2018%20Pro%2026-10-2026%20at%2007.14.01.png" width=30%/>
 
 ## NavigabilnostApp.swift
