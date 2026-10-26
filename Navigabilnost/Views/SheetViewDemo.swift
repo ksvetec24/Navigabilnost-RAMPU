@@ -11,18 +11,23 @@ struct SheetViewDemo: View {
     @State private var isSheetPresented = false
     var body: some View {
         VStack(spacing: 20) {
+            
             Text("Modalni prikaz (.sheet)") .font(.title2)
+            
             Button("Otvori Sheet") {
                 isSheetPresented = true
-            } .buttonStyle(.borderedProminent)
+            }
+            .buttonStyle(.borderedProminent)
             .sheet(isPresented: $isSheetPresented) {
-                SheetContentView()
+                NekiView()
             }
         } .padding()
         .navigationTitle("Sheets")
     }
 }
-struct SheetContentView: View {
+
+
+struct NekiView: View {
     @Environment(\.dismiss) private var dismiss
     var body: some View {
         VStack(spacing: 20) {

@@ -45,3 +45,26 @@ struct PageStyleTabView: View {
         .indexViewStyle(.page(backgroundDisplayMode: .always))
     }
 }
+
+struct SimpleTabViewDemo: View {
+    var body: some View {
+        TabView {
+            Tab("Početna", systemImage: "house") {
+              //HomeView()
+                Text("First")
+            }
+            Tab("Pretraživanje", systemImage: "magnifyingglass") {
+                //SearchView()
+            }
+            TabSection("Postavke") {
+                Tab("Profil", systemImage: "person") {
+                    //ProfileView()
+                }
+            }
+        }.tabViewStyle(.page)
+    }
+}
+
+#Preview{
+    SimpleTabViewDemo()
+}

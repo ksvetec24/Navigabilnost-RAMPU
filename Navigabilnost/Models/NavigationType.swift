@@ -13,3 +13,4 @@ struct NavigationType: Hashable, Identifiable {
     let description: String
     let destination: NavigationKind
 }
+

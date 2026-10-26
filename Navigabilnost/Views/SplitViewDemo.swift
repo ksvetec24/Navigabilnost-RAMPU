@@ -27,21 +27,6 @@ struct Store: Hashable, Identifiable{
 
 
 struct SplitViewDemo: View {
-    @State private var selectedCategory: String? = "Igre"
-    
-    static let stores=[
-        Store(name: "Konzum", departments: [Department(name: "Sales",
-                                                       employees:
-                                                        [Employee(firstName: "Ivan", lastName: "Horvat", position: "Manager"),
-                                                         Employee(firstName: "Marko", lastName: "Marković", position: "Intern")]
-                                                      ),
-                                            Department(name: "IT",
-                                                       employees:
-                                                        [Employee(firstName: "Ivica", lastName: "Ivanović", position: "Manager"),
-                                                         Employee(firstName: "Mihael", lastName: "Jackson", position: "Customer support")]
-                                                        )
-        ])
-    ]
     @State private var selectedStore: Store? = nil
     @State private var selectedDepartment: Department? = nil
     @State private var columnVisibility: NavigationSplitViewVisibility = .all
@@ -77,6 +62,20 @@ struct SplitViewDemo: View {
             }
         }
     }
+    
+    static let stores=[
+        Store(name: "Konzum", departments: [Department(name: "Sales",
+                                                       employees:
+                                                        [Employee(firstName: "Ivan", lastName: "Horvat", position: "Manager"),
+                                                         Employee(firstName: "Marko", lastName: "Marković", position: "Intern")]
+                                                      ),
+                                            Department(name: "IT",
+                                                       employees:
+                                                        [Employee(firstName: "Ivica", lastName: "Ivanović", position: "Manager"),
+                                                         Employee(firstName: "Mihael", lastName: "Jackson", position: "Customer support")]
+                                                        )
+        ])
+    ]
 }
 #Preview {
     SplitViewDemo()

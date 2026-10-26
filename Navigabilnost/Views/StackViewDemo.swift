@@ -14,4 +14,45 @@ struct StackViewDemo: View {
     }
 }
 
+struct SimpleViewDestinationExample: View {
+    var body: some View {
+        NavigationStack {
+            List {
+                NavigationLink {
+                    ColorDetail(color: .blue, text: "Blue")
+                } label: {
+                    Text("Prikaži blue")
+                }
+            } .navigationTitle("View Destination")
+        }
+    }
+}
 
+struct SimpleValueDestinationExample: View {
+    var body: some View {
+        NavigationStack {
+            List {
+                NavigationLink("Mint", value: Color.mint)
+                NavigationLink("Red", value: Color.red)
+            }
+            .navigationDestination(for: Color.self) { color in
+                ColorDetail(color: color, text: color.description)
+            } .navigationTitle("Value Destination")
+        }
+    }
+}
+
+
+struct ColorDetail: View{
+    let color: Color
+    let text: String
+    
+    var body: some View{
+        Text(text)
+        color
+    }
+}
+
+#Preview{
+    SimpleValueDestinationExample()
+}
