@@ -57,9 +57,9 @@ Prikazuje hijerarhijsku navigaciju pomoću `NavigationSplitView`, idealnu za ure
 
 ### Mobilni prikaz
 <p align="center">
-    <img src="https://github.com/ksvetec24/Navigabilnost-RAMPU/blob/main/resources/SplitViewDemo%20-%3E%20Portrait.png" width=30%/>
-    <img src="https://github.com/ksvetec24/Navigabilnost-RAMPU/blob/main/resources/SplitViewDemo%20-%3E%20Portrait2.png" width=30%/>
-    <img src="https://github.com/ksvetec24/Navigabilnost-RAMPU/blob/main/resources/SplitViewDemo%20-%3E%20Portrait3.png" width=30%/>
+    <img src="https://github.com/ksvetec24/Navigabilnost-RAMPU/blob/main/resources/SplitViewDemoPortrait.png" width=30%/>
+    <img src="https://github.com/ksvetec24/Navigabilnost-RAMPU/blob/main/resources/SplitViewDemoPortrait2.png" width=30%/>
+    <img src="https://github.com/ksvetec24/Navigabilnost-RAMPU/blob/main/resources/SplitViewDemoPortrait3.png" width=30%/>
 </p>
 
 
